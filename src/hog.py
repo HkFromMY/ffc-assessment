@@ -73,7 +73,7 @@ while cap.isOpened():
                 # calculate staff's centroid coordinate
                 staff_x = int((xA + xB) // 2)
                 staff_y = int((yA + yB) // 2)
-
+                cv2.putText(frame, "Staff", (xA, yA), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
                 print(f"Staff found at: X={staff_x} Y={staff_y}")
 
             # cv2.imwrite(f'people\\people_{count}.jpg', roi)
